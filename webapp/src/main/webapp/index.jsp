@@ -1,19 +1,26 @@
- <form action="/action_page.php">
-  <h2>Register Form</h2>
-  <div class="input-container">
-    <i class="fa fa-user icon"></i>
-    <input class="input-field" type="text" placeholder="Username" name="usrnm">
-  </div>
+<%@ page contentType="text/html; charset=iso-8859-1" language="java" import="java.sql.*" errorPage="" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
 
-  <div class="input-container">
-    <i class="fa fa-envelope icon"></i>
-    <input class="input-field" type="text" placeholder="Email" name="email">
-  </div>
+<body>
+<%
+    if(request.getAttribute("reply")!=null){
+        out.println(request.getAttribute("reply"));
+    }
+%>
 
-  <div class="input-container">
-    <i class="fa fa-key icon"></i>
-    <input class="input-field" type="password" placeholder="Password" name="psw">
-  </div>
+<form action="actionservlet" method="post" name="myform">
+user Name:<input name="username" type="text" size="10" /><br />
+First Name:<input name="username" type="text" size="10" /><br />
+Last Name:<input name="username" type="text" size="10" /><br />
+Email id:<input name="username" type="text" size="10" /><br />
+<input name="submit" type="submit" value="Submit" />
+<input name="Reset" type="reset" value="Reset" />
 
-  <button type="submit" class="btn">Register</button>
-</form> 
+</form>
+</body>
+</html>
