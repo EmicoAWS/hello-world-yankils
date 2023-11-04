@@ -14,7 +14,7 @@
 %>
 
 <form action="actionservlet" method="post" name="myform">
-user TOMICO Name:<input name="username" type="text" size="10" /><br />
+user EMILKA Name:<input name="username" type="text" size="10" /><br />
 First Name:<input name="username" type="text" size="10" /><br />
 Last Name:<input name="username" type="text" size="10" /><br />
 Email id:<input name="username" type="text" size="10" /><br />
